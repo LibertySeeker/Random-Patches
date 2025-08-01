@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- patches the recipe of making charcoal or coal from Expanded Materials: Metals to use more woody stuff from Simple Chains: Lumber (Continued) other than only lumber-->
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Expanded Materials - Metals</li>
+    </mods>
+    <match Class="PatchOperationAdd" MayRequire="Mlie.SimpleChainsLumber">
+            <xpath>Defs/RecipeDef[defName="EM_Make_Charcoal" or defName="EM_Make_Charcoal_Bulk" or defName="EM_Make_ChemfuelFromWood_Lead"]/ingredients/li[1]/filter/thingDefs</xpath>
+               <value>
+                  <li>Owl_WoodLog</li>
+                  <li>Owl_Firewood</li>
+               </value>
+    </match>
+  </Operation>
+
+
+  <!-- patches the recipe of making charcoal or coal from Expanded Materials: Metals to use more woody stuff from Simple Chains: Lumber Adjusted other than only lumber-->
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Expanded Materials - Metals</li>
+    </mods>
+    <match Class="PatchOperationAdd" MayRequire="Owlchemist.SimpleChains.Lumber">
+            <xpath>Defs/RecipeDef[defName="EM_Make_Charcoal" or defName="EM_Make_Charcoal_Bulk" or defName="EM_Make_ChemfuelFromWood_Lead"]/ingredients/li[1]/filter/thingDefs</xpath>
+               <value>
+                  <li>Owl_WoodLog</li>
+                  <li>Owl_Firewood</li>
+               </value>
+    </match>
+  </Operation>
+  
+</Patch>

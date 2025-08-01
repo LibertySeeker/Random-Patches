@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- patches the recipe of making industrial ammo to use materials from Expanded Materials: Metals mod-->
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[LTS]Ammunition - Simple Ammo Pack</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
+            <xpath>Defs/RecipeDef[defName="Make_AmmoIndustrial"]/ingredients/li[1]/filter/thingDefs</xpath>
+               <value>
+                  <li>Steel</li>
+                  <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Lead</li>
+               </value>
+        </li>
+        <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
+            <xpath>Defs/RecipeDef[defName="Make_AmmoIndustrial"]/fixedIngredientFilter/thingDefs</xpath>
+               <value>
+                  <li>Steel</li>
+                  <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Lead</li>
+               </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+
+  <!-- patches the recipe of making spacer ammo to use materials from Expanded Materials: Metals mod-->
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[LTS]Ammunition - Simple Ammo Pack</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
+            <xpath>Defs/RecipeDef[defName="Make_AmmoSpacer"]/ingredients/li[1]/filter/thingDefs</xpath>
+               <value>
+                        <li>Plasteel</li>
+                        <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Titanium</li>
+                        <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Germanium</li>
+               </value>
+        </li>
+        <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
+            <xpath>Defs/RecipeDef[defName="Make_AmmoSpacer"]/fixedIngredientFilter/thingDefs</xpath>
+               <value>
+                        <li>Plasteel</li>
+                        <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Titanium</li>
+                        <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Germanium</li>
+               </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  
+  
+  <!-- patches the recipe of making ultratech ammo to use materials from Expanded Materials: Metals mod-->
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[LTS]Ammunition - Simple Ammo Pack</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
+            <xpath>Defs/RecipeDef[defName="Make_AmmoUltratech"]/ingredients/li[1]/filter/thingDefs</xpath>
+               <value>
+                        <li>Plasteel</li>
+                        <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Titanium</li>
+                        <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Germanium</li>
+               </value>
+        </li>
+        <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
+            <xpath>Defs/RecipeDef[defName="Make_AmmoSpacer"]/fixedIngredientFilter/thingDefs</xpath>
+               <value>
+						<li>Uranium</li>
+                        <li>Plasteel</li>
+                        <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Titanium</li>
+                        <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Germanium</li>
+               </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  
+</Patch>
