@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>EM-Metals Patches</name>
-	<packageId>TM3.EMMetalsPatches</packageId>
+	<name>Random Patches</name>
+	<packageId>TM3.RandomPatches</packageId>
 	<author>TM3</author>
 	<supportedVersions>
 		<li>1.5</li>
 		<li>1.6</li>
 	</supportedVersions>
 	
-    <description>A simple mod that patches stuff from Expanded Materials : Metals to play well with other mods. Load this patch after those mods if present.</description>
-	
+    <description>A simple mod that patches stuff from some mods to play well with other mods. Load this patch after those mods if present.</description>
+	<!-- no dependencies as it only patches what is present
 	<modDependencies>
 	
 		<li>
@@ -19,9 +19,12 @@
 			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
 		</li>
 	</modDependencies>
-	
+	-->
 	<loadAfter>
 		<li>Argon.ExpandedMaterials.Metals</li>
+		<li>Mlie.SimpleChainsLumber</li>
+		<li>Owlchemist.SimpleChains.Lumber</li>
+		<li>LimeTreeSnake.Ammo</li>
 	</loadAfter>
 
 </ModMetaData>
