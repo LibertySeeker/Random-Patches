@@ -9,18 +9,16 @@
     </mods>
     <match Class="PatchOperationSequence">
       <operations>
-        <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
+        <li Class="PatchOperationAdd" MayRequire="Argon.ExpandedMaterials.Metals">
             <xpath>Defs/RecipeDef[defName="Make_AmmoIndustrial"]/ingredients/li[1]/filter/thingDefs</xpath>
                <value>
-                  <li>Steel</li>
-                  <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Lead</li>
+                  <li>EM_Lead</li>
                </value>
         </li>
-        <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
+        <li Class="PatchOperationAdd" MayRequire="Argon.ExpandedMaterials.Metals">
             <xpath>Defs/RecipeDef[defName="Make_AmmoIndustrial"]/fixedIngredientFilter/thingDefs</xpath>
                <value>
-                  <li>Steel</li>
-                  <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Lead</li>
+                  <li>EM_Lead</li>
                </value>
         </li>
       </operations>
@@ -36,20 +34,18 @@
     </mods>
     <match Class="PatchOperationSequence">
       <operations>
-        <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
+        <li Class="PatchOperationAdd" MayRequire="Argon.ExpandedMaterials.Metals">
             <xpath>Defs/RecipeDef[defName="Make_AmmoSpacer"]/ingredients/li[1]/filter/thingDefs</xpath>
                <value>
-                        <li>Plasteel</li>
-                        <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Titanium</li>
-                        <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Germanium</li>
+                        <li>EM_Titanium</li>
+                        <li>EM_Germanium</li>
                </value>
         </li>
-        <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
+        <li Class="PatchOperationAdd" MayRequire="Argon.ExpandedMaterials.Metals">
             <xpath>Defs/RecipeDef[defName="Make_AmmoSpacer"]/fixedIngredientFilter/thingDefs</xpath>
                <value>
-                        <li>Plasteel</li>
-                        <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Titanium</li>
-                        <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Germanium</li>
+                        <li>EM_Titanium</li>
+                        <li>EM_Germanium</li>
                </value>
         </li>
       </operations>
@@ -65,21 +61,18 @@
     </mods>
     <match Class="PatchOperationSequence">
       <operations>
-        <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
+        <li Class="PatchOperationAdd" MayRequire="Argon.ExpandedMaterials.Metals">
             <xpath>Defs/RecipeDef[defName="Make_AmmoUltratech"]/ingredients/li[1]/filter/thingDefs</xpath>
                <value>
-                        <li>Plasteel</li>
-                        <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Titanium</li>
-                        <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Germanium</li>
+                        <li>EM_Titanium</li>
+                        <li>EM_Germanium</li>
                </value>
         </li>
-        <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
-            <xpath>Defs/RecipeDef[defName="Make_AmmoSpacer"]/fixedIngredientFilter/thingDefs</xpath>
+        <li Class="PatchOperationAdd" MayRequire="Argon.ExpandedMaterials.Metals">
+            <xpath>Defs/RecipeDef[defName="Make_AmmoUltratech"]/fixedIngredientFilter/thingDefs</xpath>
                <value>
-						<li>Uranium</li>
-                        <li>Plasteel</li>
-                        <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Titanium</li>
-                        <li MayRequire="Argon.ExpandedMaterials.Metals">EM_Germanium</li>
+                        <li>EM_Titanium</li>
+                        <li>EM_Germanium</li>
                </value>
         </li>
       </operations>
