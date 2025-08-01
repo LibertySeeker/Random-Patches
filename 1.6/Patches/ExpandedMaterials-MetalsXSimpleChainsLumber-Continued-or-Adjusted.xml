@@ -8,7 +8,7 @@
       <li>Expanded Materials - Metals</li>
     </mods>
     <match Class="PatchOperationSequence">
-		<operation>
+		<operations>
 			<li Class="PatchOperationAdd" MayRequire="Mlie.SimpleChainsLumber">
             <xpath>Defs/RecipeDef[defName="EM_Make_Charcoal" or defName="EM_Make_Charcoal_Bulk" or defName="EM_Make_ChemfuelFromWood_Lead"]/ingredients/li[1]/filter/thingDefs</xpath>
                <value>
@@ -23,7 +23,7 @@
                   <li>Owl_Firewood</li>
                </value>
 			</li>
-		</operation>
+		</operations>
     </match>
   </Operation>
 
@@ -35,7 +35,7 @@
       <li>Expanded Materials - Metals</li>
     </mods>
     <match Class="PatchOperationSequence">
-		<operation>
+		<operations>
 			<li Class="PatchOperationAdd" MayRequire="Owlchemist.SimpleChains.Lumber">
             <xpath>Defs/RecipeDef[defName="EM_Make_Charcoal" or defName="EM_Make_Charcoal_Bulk" or defName="EM_Make_ChemfuelFromWood_Lead"]/ingredients/li[1]/filter/thingDefs</xpath>
                <value>
@@ -50,7 +50,7 @@
                   <li>Owl_Firewood</li>
                </value>
 			</li>
-		</operation>
+		</operations>
     </match>
   </Operation>
   
@@ -61,7 +61,7 @@
       <li>Expanded Materials - Metals</li>
     </mods>
     <match Class="PatchOperationSequence">
-		<operation>
+		<operations>
 			<li Class="PatchOperationAdd" MayRequire="Mlie.SimpleChainsLumber">
             <xpath>Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood" or defName="EM_AlloyTemperedSteel_Wood_Bulk"]/ingredients/li[2]/filter/thingDefs</xpath>
                <value>
@@ -76,7 +76,7 @@
                   <li>Owl_Firewood</li>
                </value>
 			</li>
-		</operation>
+		</operations>
     </match>
   </Operation>
   
@@ -87,7 +87,7 @@
       <li>Expanded Materials - Metals</li>
     </mods>
     <match Class="PatchOperationSequence">
-		<operation>
+		<operations>
 			<li Class="PatchOperationAdd" MayRequire="Owlchemist.SimpleChains.Lumber">
             <xpath>Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood" or defName="EM_AlloyTemperedSteel_Wood_Bulk"]/ingredients/li[2]/filter/thingDefs</xpath>
                <value>
@@ -102,7 +102,7 @@
                   <li>Owl_Firewood</li>
                </value>
 			</li>
-		</operation>
+		</operations>
     </match>
   </Operation>
   
