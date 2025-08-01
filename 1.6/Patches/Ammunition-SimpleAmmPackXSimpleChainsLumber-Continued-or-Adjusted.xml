@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-  <!-- patches the recipe of making primitive ammo to use materials from Simple Chains: Lumber mods, Continued and Adjusted-->
+  <!-- patches the recipe of making primitive ammo to use materials from Simple Chains: Lumber Continued by mlie-->
 
   <Operation Class="PatchOperationFindMod">
     <mods>
@@ -16,8 +16,25 @@
 				  <li>Owl_Lumber</li>
                </value>
         </li>
-        <li Class="PatchOperationAdd" MayRequire="Owlchemist.SimpleChains.Lumber">
+        <li Class="PatchOperationAdd" MayRequire="Mlie.SimpleChainsLumber">
+            <xpath>Defs/RecipeDef[defName="Make_AmmoPrimitive"]/fixedIngredientFilter/thingDefs</xpath>
+               <value>
+                  <li>Owl_WoodLog</li>
+				  <li>Owl_Lumber</li>
+               </value>
+        </li>
+		
+	<!-- patches the recipe of making primitive ammo to use materials from Simple Chains: Lumber Adjusted by wyr3d-->
+		
+		<li Class="PatchOperationAdd" MayRequire="Owlchemist.SimpleChains.Lumber">
             <xpath>Defs/RecipeDef[defName="Make_AmmoPrimitive"]/ingredients/li[1]/filter/thingDefs</xpath>
+               <value>
+                  <li>Owl_WoodLog</li>
+				  <li>Owl_Lumber</li>
+               </value>
+        </li>
+        <li Class="PatchOperationAdd" MayRequire="Owlchemist.SimpleChains.Lumber">
+            <xpath>Defs/RecipeDef[defName="Make_AmmoPrimitive"]/fixedIngredientFilter/thingDefs</xpath>
                <value>
                   <li>Owl_WoodLog</li>
 				  <li>Owl_Lumber</li>
