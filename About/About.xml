@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>EM-Metals Patches</name>
+	<packageId>TM3.EMMetalsPatches</packageId>
+	<author>TM3</author>
+	<supportedVersions>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+	
+    <description>A simple mod that patches stuff from Expanded Materials : Metals to play well with other mods. Load this patch after those mods if present.</description>
+	
+	<modDependencies>
+	
+		<li>
+			<packageId>Argon.ExpandedMaterials.Metals</packageId>
+			<displayName>Expanded Materials - Metals</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+	</modDependencies>
+	
+	<loadAfter>
+		<li>Argon.ExpandedMaterials.Metals</li>
+	</loadAfter>
+
+</ModMetaData>
