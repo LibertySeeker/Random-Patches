@@ -17,10 +17,15 @@
                </value>
         </li>
         <li Class="PatchOperationAdd" MayRequire="Mlie.SimpleChainsLumber">
-            <xpath>Defs/RecipeDef[defName="Make_AmmoPrimitive"]/fixedIngredientFilter/thingDefs</xpath>
+            <xpath>Defs/RecipeDef[defName="Make_AmmoPrimitive"]</xpath>
                <value>
-                  <li>Owl_WoodLog</li>
-				  <li>Owl_Lumber</li>
+				 <fixedIngredientFilter>
+					<thingDefs>
+					  <li>WoodLog</li>
+					  <li>Owl_WoodLog</li>
+					  <li>Owl_Lumber</li>
+					</thingDefs>
+				  </fixedIngredientFilter>
                </value>
         </li>
       </operations>
@@ -43,10 +48,15 @@
                </value>
         </li>
         <li Class="PatchOperationAdd" MayRequire="Owlchemist.SimpleChains.Lumber">
-            <xpath>Defs/RecipeDef[defName="Make_AmmoPrimitive"]/fixedIngredientFilter/thingDefs</xpath>
+            <xpath>Defs/RecipeDef[defName="Make_AmmoPrimitive"]</xpath>
                <value>
-                  <li>Owl_WoodLog</li>
-				  <li>Owl_Lumber</li>
+				 <fixedIngredientFilter>
+					<thingDefs>
+					  <li>WoodLog</li>
+					  <li>Owl_WoodLog</li>
+					  <li>Owl_Lumber</li>
+					</thingDefs>
+				  </fixedIngredientFilter>
                </value>
         </li>
       </operations>
