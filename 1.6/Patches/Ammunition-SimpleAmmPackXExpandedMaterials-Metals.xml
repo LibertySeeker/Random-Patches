@@ -9,16 +9,20 @@
     </mods>
     <match Class="PatchOperationSequence">
       <operations>
-        <li Class="PatchOperationAdd" MayRequire="Argon.ExpandedMaterials.Metals">
+        <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
             <xpath>Defs/RecipeDef[defName="Make_AmmoIndustrial"]/ingredients/li[1]/filter/thingDefs</xpath>
                <value>
-                  <li>EM_Lead</li>
+				  <thingDefs>
+                    <li>EM_Lead</li>
+				  </thingDefs>
                </value>
         </li>
-        <li Class="PatchOperationAdd" MayRequire="Argon.ExpandedMaterials.Metals">
+        <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
             <xpath>Defs/RecipeDef[defName="Make_AmmoIndustrial"]/fixedIngredientFilter/thingDefs</xpath>
                <value>
-                  <li>EM_Lead</li>
+				  <thingDefs>
+                    <li>EM_Lead</li>
+				  </thingDefs>
                </value>
         </li>
       </operations>
@@ -34,18 +38,22 @@
     </mods>
     <match Class="PatchOperationSequence">
       <operations>
-        <li Class="PatchOperationAdd" MayRequire="Argon.ExpandedMaterials.Metals">
+        <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
             <xpath>Defs/RecipeDef[defName="Make_AmmoSpacer"]/ingredients/li[1]/filter/thingDefs</xpath>
                <value>
+				  <thingDefs>
                         <li>EM_Titanium</li>
                         <li>EM_Germanium</li>
+				  </thingDefs>
                </value>
         </li>
-        <li Class="PatchOperationAdd" MayRequire="Argon.ExpandedMaterials.Metals">
+        <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
             <xpath>Defs/RecipeDef[defName="Make_AmmoSpacer"]/fixedIngredientFilter/thingDefs</xpath>
                <value>
+				  <thingDefs>
                         <li>EM_Titanium</li>
                         <li>EM_Germanium</li>
+				  </thingDefs>
                </value>
         </li>
       </operations>
@@ -61,18 +69,22 @@
     </mods>
     <match Class="PatchOperationSequence">
       <operations>
-        <li Class="PatchOperationAdd" MayRequire="Argon.ExpandedMaterials.Metals">
+        <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
             <xpath>Defs/RecipeDef[defName="Make_AmmoUltratech"]/ingredients/li[1]/filter/thingDefs</xpath>
                <value>
+				  <thingDefs>
                         <li>EM_Titanium</li>
                         <li>EM_Germanium</li>
+				  </thingDefs>
                </value>
         </li>
-        <li Class="PatchOperationAdd" MayRequire="Argon.ExpandedMaterials.Metals">
+        <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
             <xpath>Defs/RecipeDef[defName="Make_AmmoUltratech"]/fixedIngredientFilter/thingDefs</xpath>
                <value>
+				  <thingDefs>
                         <li>EM_Titanium</li>
                         <li>EM_Germanium</li>
+				  </thingDefs>
                </value>
         </li>
       </operations>

@@ -9,18 +9,22 @@
     </mods>
     <match Class="PatchOperationSequence">
 		<operations>
-			<li Class="PatchOperationAdd" MayRequire="Mlie.SimpleChainsLumber">
+			<li Class="PatchOperationReplace" MayRequire="Mlie.SimpleChainsLumber">
             <xpath>Defs/RecipeDef[defName="EM_Make_Charcoal" or defName="EM_Make_Charcoal_Bulk" or defName="EM_Make_ChemfuelFromWood_Lead"]/ingredients/li[1]/filter/thingDefs</xpath>
                <value>
-                  <li>Owl_WoodLog</li>
-                  <li>Owl_Firewood</li>
+				  <thingDefs>
+                    <li>Owl_WoodLog</li>
+                    <li>Owl_Firewood</li>
+			      </thingDefs>
                </value>
 			</li>
-			<li Class="PatchOperationAdd" MayRequire="Mlie.SimpleChainsLumber">
+			<li Class="PatchOperationReplace" MayRequire="Mlie.SimpleChainsLumber">
             <xpath>Defs/RecipeDef[defName="EM_Make_Charcoal" or defName="EM_Make_Charcoal_Bulk" or defName="EM_Make_ChemfuelFromWood_Lead"]/fixedIngredientFilter/thingDefs</xpath>
                <value>
-                  <li>Owl_WoodLog</li>
-                  <li>Owl_Firewood</li>
+				  <thingDefs>
+                    <li>Owl_WoodLog</li>
+                    <li>Owl_Firewood</li>
+				  </thingDefs>
                </value>
 			</li>
 		</operations>
@@ -36,18 +40,22 @@
     </mods>
     <match Class="PatchOperationSequence">
 		<operations>
-			<li Class="PatchOperationAdd" MayRequire="Owlchemist.SimpleChains.Lumber">
+			<li Class="PatchOperationReplace" MayRequire="Owlchemist.SimpleChains.Lumber">
             <xpath>Defs/RecipeDef[defName="EM_Make_Charcoal" or defName="EM_Make_Charcoal_Bulk" or defName="EM_Make_ChemfuelFromWood_Lead"]/ingredients/li[1]/filter/thingDefs</xpath>
                <value>
-                  <li>Owl_WoodLog</li>
-                  <li>Owl_Firewood</li>
+				  <thingDefs>
+                    <li>Owl_WoodLog</li>
+                    <li>Owl_Firewood</li>
+				  </thingDefs>
                </value>
 			</li>
-			<li Class="PatchOperationAdd" MayRequire="Owlchemist.SimpleChains.Lumber">
+			<li Class="PatchOperationReplace" MayRequire="Owlchemist.SimpleChains.Lumber">
             <xpath>Defs/RecipeDef[defName="EM_Make_Charcoal" or defName="EM_Make_Charcoal_Bulk" or defName="EM_Make_ChemfuelFromWood_Lead"]/fixedIngredientFilter/thingDefs</xpath>
                <value>
-                  <li>Owl_WoodLog</li>
-                  <li>Owl_Firewood</li>
+				  <thingDefs>
+                    <li>Owl_WoodLog</li>
+                    <li>Owl_Firewood</li>
+				  </thingDefs>
                </value>
 			</li>
 		</operations>
@@ -62,18 +70,22 @@
     </mods>
     <match Class="PatchOperationSequence">
 		<operations>
-			<li Class="PatchOperationAdd" MayRequire="Mlie.SimpleChainsLumber">
+			<li Class="PatchOperationReplace" MayRequire="Mlie.SimpleChainsLumber">
             <xpath>Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood" or defName="EM_AlloyTemperedSteel_Wood_Bulk"]/ingredients/li[2]/filter/thingDefs</xpath>
                <value>
-                  <li>Owl_WoodLog</li>
-                  <li>Owl_Firewood</li>
+				  <thingDefs>
+                    <li>Owl_WoodLog</li>
+                    <li>Owl_Firewood</li>
+				  </thingDefs>
                </value>
 			</li>
-			<li Class="PatchOperationAdd" MayRequire="Mlie.SimpleChainsLumber">
+			<li Class="PatchOperationReplace" MayRequire="Mlie.SimpleChainsLumber">
             <xpath>Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood" or defName="EM_AlloyTemperedSteel_Wood_Bulk"]/fixedIngredientFilter/thingDefs</xpath>
                <value>
-                  <li>Owl_WoodLog</li>
-                  <li>Owl_Firewood</li>
+				  <thingDefs>
+                    <li>Owl_WoodLog</li>
+                    <li>Owl_Firewood</li>
+				  </thingDefs>
                </value>
 			</li>
 		</operations>
@@ -88,18 +100,22 @@
     </mods>
     <match Class="PatchOperationSequence">
 		<operations>
-			<li Class="PatchOperationAdd" MayRequire="Owlchemist.SimpleChains.Lumber">
+			<li Class="PatchOperationReplace" MayRequire="Owlchemist.SimpleChains.Lumber">
             <xpath>Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood" or defName="EM_AlloyTemperedSteel_Wood_Bulk"]/ingredients/li[2]/filter/thingDefs</xpath>
                <value>
-                  <li>Owl_WoodLog</li>
-                  <li>Owl_Firewood</li>
+				  <thingDefs>
+                    <li>Owl_WoodLog</li>
+                    <li>Owl_Firewood</li>
+				  </thingDefs>
                </value>
 			</li>
-			<li Class="PatchOperationAdd" MayRequire="Owlchemist.SimpleChains.Lumber">
+			<li Class="PatchOperationReplace" MayRequire="Owlchemist.SimpleChains.Lumber">
             <xpath>Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood" or defName="EM_AlloyTemperedSteel_Wood_Bulk"]/fixedIngredientFilter/thingDefs</xpath>
                <value>
-                  <li>Owl_WoodLog</li>
-                  <li>Owl_Firewood</li>
+				  <thingDefs>
+                    <li>Owl_WoodLog</li>
+                    <li>Owl_Firewood</li>
+				  </thingDefs>
                </value>
 			</li>
 		</operations>
