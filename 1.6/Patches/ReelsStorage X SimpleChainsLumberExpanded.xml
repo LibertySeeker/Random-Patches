@@ -19,19 +19,34 @@
 					<value>small pile</value>
 				</li>-->
 				
-				<li Class="PatchOperationAdd" MayRequire="tm3.SimpleChains.Lumber">
-					<xpath>/Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile" or defName="ReelStorageTanningRack"  or defName="ReelStorageWeaponRack"]/stuffCategories</xpath>
+				<li Class="PatchOperationReplace" MayRequire="tm3.SimpleChains.Lumber">
+					<xpath>/Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]/stuffCategories</xpath>
 					<value>
-						<li>Owl_WoodLog</li>					
-						<li>Owl_Firewood</li>
-						<li>Owl_GreenLumber</li>
-						<li>WoodLog</li>
+						<stuffCategories>
+							<li>Owl_WoodLog</li>					
+							<li>Owl_Firewood</li>
+							<li>Owl_GreenLumber</li>
+							<li>WoodLog</li>
+						<stuffCategories/>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace" MayRequire="tm3.SimpleChains.Lumber">
+					<xpath>/Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile" or defName="ReelStorageTanningRack" or defName="ReelStorageWeaponRack"]/stuffCategories</xpath>
+					<value>
+						<stuffCategories>
+							<li>Owl_WoodLog</li>
+							<li>Owl_GreenLumber</li>
+							<li>WoodLog</li>
+						<stuffCategories/>
 					</value>
 				</li>
 				
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]/modExtensions/li[@Class="AdaptiveStorage.Extension"]/lockStorageSettingsToStuff</xpath>
-					<value>false</value>
+					<value>
+						<lockStorageSettingsToStuff>false</lockStorageSettingsToStuff>
+					</value>
 				</li>
 				
 				<li Class="PatchOperationConditional" MayRequire="tm3.SimpleChains.Lumber">
