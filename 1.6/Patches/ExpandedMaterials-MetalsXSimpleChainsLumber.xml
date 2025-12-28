@@ -62,6 +62,36 @@
     </match>
   </Operation>
   
+  <!-- patches the recipe of making charcoal or coal from Expanded Materials: Metals to use more woody stuff from Simple Chains: Lumber Expanded other than only lumber-->
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Expanded Materials - Metals</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace" MayRequire="tm3.SimpleChains.Lumber">
+            <xpath>Defs/RecipeDef[defName="EM_Make_Charcoal" or defName="EM_Make_Charcoal_Bulk" or defName="EM_Make_ChemfuelFromWood_Lead"]/ingredients/li[1]/filter/thingDefs</xpath>
+               <value>
+				  <thingDefs>
+                    <li>Owl_WoodLog</li>
+                    <li>Owl_Firewood</li>
+				  </thingDefs>
+               </value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="tm3.SimpleChains.Lumber">
+            <xpath>Defs/RecipeDef[defName="EM_Make_Charcoal" or defName="EM_Make_Charcoal_Bulk" or defName="EM_Make_ChemfuelFromWood_Lead"]/fixedIngredientFilter/thingDefs</xpath>
+               <value>
+				  <thingDefs>
+                    <li>Owl_WoodLog</li>
+                    <li>Owl_Firewood</li>
+				  </thingDefs>
+               </value>
+			</li>
+		</operations>
+    </match>
+  </Operation>
+  
   <!-- patches the recipe of making Tempered Steel from Expanded Materials: Metals to use more woody stuff from Simple Chains: Lumber (Continued) other than only lumber-->
 
   <Operation Class="PatchOperationFindMod">
@@ -110,6 +140,36 @@
                </value>
 			</li>
 			<li Class="PatchOperationReplace" MayRequire="Owlchemist.SimpleChains.Lumber">
+            <xpath>Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood" or defName="EM_AlloyTemperedSteel_Wood_Bulk"]/fixedIngredientFilter/thingDefs</xpath>
+               <value>
+				  <thingDefs>
+                    <li>Owl_WoodLog</li>
+                    <li>Owl_Firewood</li>
+				  </thingDefs>
+               </value>
+			</li>
+		</operations>
+    </match>
+  </Operation>
+  
+  <!-- patches the recipe of making Tempered Steel from Expanded Materials: Metals to use more woody stuff from Simple Chains: Lumber Expanded other than only lumber-->
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Expanded Materials - Metals</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace" MayRequire="tm3.SimpleChains.Lumber">
+            <xpath>Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood" or defName="EM_AlloyTemperedSteel_Wood_Bulk"]/ingredients/li[2]/filter/thingDefs</xpath>
+               <value>
+				  <thingDefs>
+                    <li>Owl_WoodLog</li>
+                    <li>Owl_Firewood</li>
+				  </thingDefs>
+               </value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="tm3.SimpleChains.Lumber">
             <xpath>Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood" or defName="EM_AlloyTemperedSteel_Wood_Bulk"]/fixedIngredientFilter/thingDefs</xpath>
                <value>
 				  <thingDefs>

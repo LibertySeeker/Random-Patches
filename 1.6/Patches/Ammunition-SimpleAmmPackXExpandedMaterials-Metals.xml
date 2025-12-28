@@ -10,19 +10,51 @@
     <match Class="PatchOperationSequence">
       <operations>
         <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
-            <xpath>Defs/RecipeDef[defName="Make_AmmoIndustrial"]/ingredients/li[1]/filter/thingDefs</xpath>
+            <xpath>Defs/RecipeDef[defName="Make_AmmoIndustrial"]/ingredients</xpath>
                <value>
-				  <thingDefs>
-                    <li>EM_Lead</li>
-				  </thingDefs>
+			      <ingredients>
+					<!-- Fixed Steel requirement -->
+					<li>
+					  <filter>
+						<thingDefs>
+						  <li>Steel</li>
+						</thingDefs>
+					  </filter>
+					  <count>5</count>
+					</li>
+					<!-- Flexible: Lead OR Steel (total 5 needed) -->
+					<li>
+					  <filter>
+						<thingDefs>
+						  <li>Lead</li>
+						  <li>Steel</li>
+						</thingDefs>
+					  </filter>
+					  <count>5</count>
+					</li>
+					<!-- Flexible: Copper OR Steel (total 5 needed) -->
+					<li>
+					  <filter>
+						<thingDefs>
+						  <li>Copper</li>
+						  <li>Steel</li>
+						</thingDefs>
+					  </filter>
+					  <count>5</count>
+					</li>
+				  </ingredients>
                </value>
         </li>
         <li Class="PatchOperationReplace" MayRequire="Argon.ExpandedMaterials.Metals">
-            <xpath>Defs/RecipeDef[defName="Make_AmmoIndustrial"]/fixedIngredientFilter/thingDefs</xpath>
+            <xpath>Defs/RecipeDef[defName="Make_AmmoIndustrial"]/fixedIngredientFilter</xpath>
                <value>
-				  <thingDefs>
-                    <li>EM_Lead</li>
-				  </thingDefs>
+				  <fixedIngredientFilter>
+					<thingDefs>
+					  <li>Steel</li>
+					  <li>Lead</li>
+					  <li>Copper</li>
+					</thingDefs>
+				  </fixedIngredientFilter>
                </value>
         </li>
       </operations>
