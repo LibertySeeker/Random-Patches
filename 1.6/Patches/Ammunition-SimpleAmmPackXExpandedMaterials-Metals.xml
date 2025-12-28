@@ -18,6 +18,7 @@
 					  <filter>
 						<thingDefs>
 						  <li>Steel</li>
+                          <li>EM_MildSteel</li>
 						</thingDefs>
 					  </filter>
 					  <count>5</count>
@@ -26,8 +27,9 @@
 					<li>
 					  <filter>
 						<thingDefs>
-						  <li>Lead</li>
+						  <li>EM_Lead</li>
 						  <li>Steel</li>
+                          <li>EM_MildSteel</li>
 						</thingDefs>
 					  </filter>
 					  <count>5</count>
@@ -36,8 +38,9 @@
 					<li>
 					  <filter>
 						<thingDefs>
-						  <li>Copper</li>
+						  <li>EM_Copper</li>
 						  <li>Steel</li>
+                          <li>EM_MildSteel</li>
 						</thingDefs>
 					  </filter>
 					  <count>5</count>
@@ -51,8 +54,9 @@
 				  <fixedIngredientFilter>
 					<thingDefs>
 					  <li>Steel</li>
-					  <li>Lead</li>
-					  <li>Copper</li>
+					  <li>EM_Lead</li>
+					  <li>EM_Copper</li>
+                      <li>EM_MildSteel</li>
 					</thingDefs>
 				  </fixedIngredientFilter>
                </value>
