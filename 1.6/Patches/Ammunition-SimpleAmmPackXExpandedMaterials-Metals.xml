@@ -13,7 +13,7 @@
             <xpath>Defs/RecipeDef[defName="Make_AmmoIndustrial"]/ingredients</xpath>
                <value>
 			      <ingredients>
-					<!-- Fixed Steel requirement -->
+				  
 					<li>
 					  <filter>
 						<thingDefs>
@@ -23,27 +23,23 @@
 					  </filter>
 					  <count>5</count>
 					</li>
-					<!-- Flexible: Lead OR Steel (total 5 needed) -->
+					
 					<li>
 					  <filter>
 						<thingDefs>
 						  <li>EM_Lead</li>
-						  <li>Steel</li>
-                          <li>EM_MildSteel</li>
 						</thingDefs>
 					  </filter>
 					  <count>5</count>
 					</li>
-					<!-- Flexible: Copper OR Steel (total 5 needed) -->
+					
 					<li>
 					  <filter>
 						<thingDefs>
 						  <li>EM_Copper</li>
-						  <li>Steel</li>
-                          <li>EM_MildSteel</li>
 						</thingDefs>
 					  </filter>
-					  <count>5</count>
+					  <count>2</count>
 					</li>
 				  </ingredients>
                </value>
@@ -54,8 +50,6 @@
 				  <fixedIngredientFilter>
 					<thingDefs>
 					  <li>Steel</li>
-					  <li>EM_Lead</li>
-					  <li>EM_Copper</li>
                       <li>EM_MildSteel</li>
 					</thingDefs>
 				  </fixedIngredientFilter>
