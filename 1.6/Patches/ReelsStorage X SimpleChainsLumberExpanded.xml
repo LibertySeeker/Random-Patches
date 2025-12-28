@@ -30,24 +30,42 @@
 				</li>
 				
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingsDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]/modExtensions/li[@Class"AdaptiveStorage.Extension"]/lockStorageSettingsToStuff</xpath>
+					<xpath>/Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]/modExtensions/li[@Class="AdaptiveStorage.Extension"]/lockStorageSettingsToStuff</xpath>
 					<value>false</value>
 				</li>
 				
-				<li Class="PatchOperationAdd" MayRequire="tm3.SimpleChains.Lumber">
-					<xpath>/Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]/building</xpath>
-					<value>
-						<fixedStorageSettings>
-							<filter>
-								<thingDefs>
-									<li>Owl_WoodLog</li>					
-									<li>Owl_Firewood</li>
-									<li>Owl_GreenLumber</li>
-									<li>WoodLog</li>
-								</thingDefs>
-							</filter>
-						</fixedStorageSettings>
-					</value>
+				<li Class="PatchOperationConditional" MayRequire="tm3.SimpleChains.Lumber">
+					<xpath>/Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]/building/fixedStorageSettings</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]/building/fixedStorageSettings</xpath>
+						<value>
+							<fixedStorageSettings>
+								<filter>
+									<thingDefs>
+										<li>Owl_WoodLog</li>					
+										<li>Owl_Firewood</li>
+										<li>Owl_GreenLumber</li>
+										<li>WoodLog</li>
+									</thingDefs>
+								</filter>
+							</fixedStorageSettings>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]/building</xpath>
+						<value>
+							<fixedStorageSettings>
+								<filter>
+									<thingDefs>
+										<li>Owl_WoodLog</li>					
+										<li>Owl_Firewood</li>
+										<li>Owl_GreenLumber</li>
+										<li>WoodLog</li>
+									</thingDefs>
+								</filter>
+							</fixedStorageSettings>
+						</value>
+					</nomatch>
 				</li>
 				
 			</operations>
