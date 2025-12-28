@@ -20,7 +20,7 @@
 				</li>-->
 				
 				<li Class="PatchOperationAdd" MayRequire="tm3.SimpleChains.Lumber">
-					<xpath>/Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]/stuffCategories</xpath>
+					<xpath>/Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile" or defName="ReelStorageTanningRack"  or defName="ReelStorageWeaponRack"]/stuffCategories</xpath>
 					<value>
 						<li>Owl_WoodLog</li>					
 						<li>Owl_Firewood</li>
