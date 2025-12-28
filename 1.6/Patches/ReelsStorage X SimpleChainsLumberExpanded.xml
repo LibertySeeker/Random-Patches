@@ -9,7 +9,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 			
-				<li Class="PatchOperationReplace">
+				<!--<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName="ReelStorageWoodPile"]/label</xpath>
 					<value>small pile</value>
 				</li>
@@ -17,14 +17,15 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName="ReelStorageLargeWoodPile"]/label</xpath>
 					<value>small pile</value>
-				</li>
+				</li>-->
 				
 				<li Class="PatchOperationAdd" MayRequire="tm3.SimpleChains.Lumber">
 					<xpath>/Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]/stuffCategories</xpath>
 					<value>
-					  <li>Owl_Firewood</li>
-					  <li>Owl_GreenLumber</li>
-					  <li>RawWoody</li>
+						<li>Owl_WoodLog</li>					
+						<li>Owl_Firewood</li>
+						<li>Owl_GreenLumber</li>
+						<li>WoodLog</li>
 					</value>
 				</li>
 				
@@ -34,7 +35,7 @@
 				</li>
 				
 				<li Class="PatchOperationAdd" MayRequire="tm3.SimpleChains.Lumber">
-					<xpath>/Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]/building/fixedStorageSettings/filter/thingDefs/li</xpath>
+					<xpath>/Defs/ThingDef[defName="ReelStorageWoodPile" or defName="ReelStorageLargeWoodPile"]/building</xpath>
 					<value>
 						<fixedStorageSettings>
 							<filter>
